@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+          wingman | login
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=10"/>
+      <link rel="icon" href="icon.png" type="image/icon type">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+    </head>
+
+
+    <body style="margin: 0px;">
+            <div style="background-color:#000000 ;
+            padding: 0px;
+            height: 150px; 
+            padding-bottom: 0px;
+            margin-bottom: 0px; text-align: center">
+            <img src="logo4.png" style="position: relative; top:0px ; left: 0%; height: 100%;">
+        </div>
+        <div style="background-color:#035D80;
+            height: 610px;
+            background-image: url(background_home.jpg); 
+            background-size: cover;
+            margin-top: 0px;
+            padding: 100px;" 
+            id="background_image">
+            <div style="text-align: center; 
+                margin: auto; 
+                background-color: rgb(0, 0, 0, 0.8);
+                width:  300px; 
+                height: auto; 
+                border-radius: 20px;
+                padding: 10px
+                ">
+                <div style="border-radius: 20px;"><h6 style="color:white;">----LOGIN----</h6></div>
+
+                <div class="row">
+                <form class="col s12" id="login_details" method="GET" action="login_deets.txt">
+                    <div class="row">
+                      <div class="input-field col s12"  style="margin-bottom: 0px;">
+                        <input id="entered_email" type="email" class="validate" style="color: white;" autofocus>
+                        <label for="user_name">Username</label>
+                      </div>
+                    </div>
+                    <div class="row" >
+                      <div class="input-field col s12" style="margin-top: 0px; margin-bottom: 0px;">
+                        <input id="entered_password" type="password" class="validate" style="color: white;">
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <span id="login_message"></span>
+                </form>
+              </div>
+                <a class="waves-effect waves-light btn" id="cont_button" onclick="loginvalidate()">
+                    LOGIN
+                </a>
+                <a style="color: #7ed4f5;" href="register_page.html" id="backup_register"><br><br>Not a user yet ? Register here.</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript" src="register.js"></script>
+            <script> 
+              var reg_link=document.getElementById("backup_register");
+              reg_link.addEventListener("mouseover", hovered, false);
+              reg_link.addEventListener("mouseout", hoverout, false);
+              function hovered(e)
+              {
+                reg_link.style.color="#039be5";
+              }
+              function hoverout(e)
+              {
+                reg_link.style.color="#7ed4f5";
+              }
+            </script>
+
+    </body>
+</html>

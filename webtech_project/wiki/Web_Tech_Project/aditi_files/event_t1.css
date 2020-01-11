@@ -1,0 +1,86 @@
+.box{
+    margin-right: 200px;
+    margin-left: 200px;
+    color:#fff;
+    padding: 10px;
+    display: none;
+    opacity: 0.9; 
+}
+
+#heading{
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #005580;
+    text-shadow: 2px 2px 5px  #002266;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    animation-name: animatebottom;
+    animation-duration: 0.1s;
+}
+
+#sub{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:steelblue;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-top: 15px;
+    animation-name: animatebottom;
+    animation-duration: 0.3s;
+    transition: transform 0.2s;
+    color: antiquewhite;
+}
+#sub:hover{
+    transform: scale(1.05);
+    opacity:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sub::first-line{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    color:#fff;
+    font-weight: bold;
+}
+
+
+body
+{   
+    background-image: url("ashim-d-silva-pGcqw1ARGyg-unsplash.jpg");
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+     background-attachment: fixed;   
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+
+
+#city {
+  min-width: 800px;
+  min-height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: 'Verdana';
+  font-size: larger;
+  padding: 12px 16px;
+  border-radius: 50px;
+  margin-right: 200px;
+  margin-left: 230px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+#ws{
+    color: cadetblue;
+}
+
+
+

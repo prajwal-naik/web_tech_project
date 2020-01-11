@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="event_t1.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+</head>
+<body>
+    <div>
+        <select id="city">
+            <option><p style="color:grey">Select city</p></option>
+            <option value="bengaluru" >Bengaluru</option>
+            <option value="delhi">Delhi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            
+        </select>
+        
+    </div> 
+
+    <div class="boxes">
+            
+        <div class="bengaluru box" id="heading"><p>Upcoming events in Bengaluru</p></div>
+        <div class="bengaluru box" id="sub"><p id="b1">India – USA Lecture Series on Aging Aircraft (IULSAA)<br>Date:Wed,27 to Fri,29 Nov<br>Use code WMEV1 to avail discount<br>Location:IISC,Bengaluru, India
+        </p></div>
+        <div class="bengaluru box" id="sub"><p id="b2">Internal Auditor Training for Aerospace Quality Management <br>Date:Mon, 25 – Wed, 27 Nov<br>Use code WMEV2 to avail discount<br>Location:Bengaluru, India
+        </p></div>
+        <div class="bengaluru box" id="sub"><p id="b3">AeroDef India<br>Date:Wed, 18 – Fri, 20 Dec<br>Use code WMEV4 to avail discount<br>Location: Manpho Convention Center, Bengaluru, India</p></div>
+        <div class="bengaluru box" id="sub"><p id="wsb">Aeromodelling Workshops In Your City!</div>
+
+        <div class="delhi box" id="heading"><p>Upcoming events in Delhi</p></div>
+        <div class="delhi box" id="sub"><p id="d1">International Conference on Mechanical and Aerospace Engineering<br>Date:Tue, 3 Dec, – Fri, 6 Dec<br>Use code WMEV1 to avail discount<br>Location: FabHotel Suncourt Karol Bagh, New Delhi, India</p></div>
+        <div class="delhi box" id="sub"><p id="d1">AERODEF India<br>Date:Sun, 17 – Mon, 18 Nov<br>Use code WMEV2 to avail discount<br>Location:Unity Tower, Mayapuri Industrial Area Phase I, New Delhi, Delhi </p></div>
+        <div class="delhi box" id="sub"><p id="wsd">Aeromodelling Workshops In Your City!</div>
+
+        <div class="hyderabad box" id="heading"><p>Upcoming events in Hyderabad</p></div>
+        <div class="hyderabad box" id="sub"><p id="wsh">Aeromodelling Workshops In Your City!</div>
+        
+        <div class="kolkata box" id="heading"><p>Upcoming events in Kolkata</p></div> 
+        <div class="kolkata box" id="sub"><p id="wsk">Aeromodelling Workshops In Your City!</div>  
+
+        <div class="mumbai box" id="heading"><p>Upcoming events in Mumbai</p></div> 
+        <div class="mumbai box" id="sub"><p id="m1">International Conference & Expo on Aerospace and Unmanned Aerial Systems<br>Date:Mon, 17 Feb<br>Use code WMEV1 to avail discount<br>Location:Polly Esther's, ColabaMumbai, India</p></div>  
+        <div class="mumbai box" id="sub"><p id="wsm">Aeromodelling Workshops In Your City!</div>   
+    </div>   
+    <script src="event_t1.js"></script>
+    
+</body>
+</html>                            

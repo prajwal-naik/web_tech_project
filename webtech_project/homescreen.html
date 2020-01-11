@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">        
+     <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="src/fullclip.min.js"></script>
+  <title>
+    Wingman | Home
+  </title>
+</head>
+<body>
+  <section class="container">
+    <div class="fullBackground" id="background_pic">
+      <div style="background-color:rgb(0, 0, 0); height: 150px; text-align: center; width:100;">
+    </div>
+  </div>
+    <div style="background-color:rgb(0, 0, 0); height: 150px; text-align: center; width:100;">
+        <img src="logo4.PNG" height="100%"  style="position: relative; top: 0%;">
+    </div>
+    <br><br>
+      <div style="text-align: center; position: relative; margin-top:20%;margin-top: 0px">
+        <div style="text-shadow: 2px 2px 2px #002266"><h2 style="color: white"><span style="color: rgb(39, 69, 235)">GIVES YOU</span> WINGS !</h2></div>
+          <br><br><br>
+          <br><br>
+        <a class="waves-effect waves-light btn-large home-button" id="start_button" style="opacity: 1" href="screen2.html">
+          <i class="material-icons left" style="color: black; font-weight: bold">flight_takeoff</i>
+          Let's Get Started
+        </a>
+      </div>
+    
+  </section>
+    <script>
+    $('.fullBackground').fullClip({
+      images: ['images/image3.jpg', 'images/image1.jpg', 'images/image2.jpg', 'images/image4.jpg', 'images/image6.jpg'],
+      transitionTime: 1000,
+      wait: 3000
+    });
+    </script>
+   
+    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

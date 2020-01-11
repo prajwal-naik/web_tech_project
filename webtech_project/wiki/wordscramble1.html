@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href ="wordscramble.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monserrat" rel="stylesheet">
+<script src = "wordscramble.js"></script>
+<style>
+#myButton {
+
+padding: 10px 25px;
+display:block;
+background-color: rgba(0, 47, 255, 0.795);
+color: white;
+text-align:center;
+position: absolute;
+top: 80px;
+right: 40px;
+border-radius:15px;
+border:none;
+}</style>
+
+</head>
+
+
+<body>
+        <form action="wikipage1.php">
+                <button id="myButton" type="submit"><h3>Back</h3></button> 
+                </form>
+<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; ">ScrambleUnscramble</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions"><strong>ALPSE</strong><br><p style="font-size: small;">Clue:The rate at which ascending air cools and descending air warms</p>
+<input id = "textbox" type = "text" name = "question1">
+<br><br>
+<p class = "questions"><strong> TIALERTEM</strong><br><p style="font-size: small;">Clue:The instrument used to measure an aircraft's altitude.</p>
+<input id = "textbox" type = "text" name = "question2">
+<br><br>
+<p class = "questions"><strong> RODALS</strong><br><p style="font-size: small;">Clue:A lateral fin/rudder extension on the top of a fuselage</p>
+<input id = "textbox" type = "text" name = "question3">
+<br><br>
+<p class = "questions"><strong> WAQUSK</strong><br><p style="font-size: small;">Clue:A four-digit number dialed by a pilot to identify his aircraft to air traffic controllers</p>
+<input id = "textbox" type = "text" name = "question4">
+<br><br>
+<p class = "questions"><strong> ANRLO</strong><br><p style="font-size: small;">Clue:Long range navigation</p>
+<input id = "textbox" type = "text" name = "question5">
+
+<!--<p class = "questions">What is the capital of Connecticut?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Hartford"> Hartford<br>
+<input type = "radio" id = "mc" name = "question2" value = "Heartford"> Heartford<br>
+
+<p class = "questions">What is the capital of New York?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Albany"> Albany<br>
+<input type = "radio" id = "mc" name = "question3" value = "All Benny's"> All Benny's<br>
+-->
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+
+<p id = "message"></p>
+
+</div>
+</html>
+
+</body>

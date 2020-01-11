@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="project_quiz.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+        #myButton {
+
+padding: 10px 25px;
+display:block;
+background-color: rgba(0, 47, 255, 0.795);
+color: white;
+text-align:center;
+position: absolute;
+top: 80px;
+right: 40px;
+border-radius:15px;
+border:none;
+}</style>
+
+    </head>
+    <body>
+            <form action="C:\Users\NAMRATHA\Desktop\webtech proj\wiki page.html">
+                    <button id="myButton" type="submit"><h3>Back</h3></button> 
+                    </form>
+            
+        <div id="container">
+                    <div id="start"><p id="startp">Start Quiz</p></div>
+                    <br>
+                        <br>
+                        <br><br>
+                        <br><br>
+                    <div id="quiz" style="display: none">
+                        
+                        <br><br>
+                        <br><br>
+                        <br>
+                        <div id="question"></div>
+                        <br><br>
+                        <div id="choices">
+                            <div class="choice" id="A" onclick="checkAnswer('choice A')"></div><br>
+                            <div class="choice" id="B" onclick="checkAnswer('choice B')"></div><br>
+                            <div class="choice" id="C" onclick="checkAnswer('choice C')"></div><br>
+                            <div class="choice" id="D" onclick="checkAnswer('choice D')"></div><br>
+                           
+                        </div>
+                         <div class="result" id="result"></div>
+                        <div id="progress"></div>
+                    </div>
+                    <div id="loader" style="display: none"></div>
+                    <div id="scoreContainer" style="display: none">
+                        <div id="quizsum"><p><u><b>Quiz Summary</b></u></p></div></div>
+                </div>
+                <br><br>
+        <script src="project_quiz.js"></script>
+    </body>
+</html>

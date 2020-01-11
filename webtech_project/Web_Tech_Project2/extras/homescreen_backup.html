@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>
+       wingman | home  
+     </title>
+     <link rel="icon" href="icon.png" type="image/icon type">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">        
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link rel="stylesheet" href="styles.css">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body style="margin: 0px; background-color:#000000 ">
+      <div style="background-color:#000000 ;height: 150px; text-align: center">
+          <img src="logo4.png" height="100%"  style="position: relative; top: 0%;">
+      </div>
+      <div style="background-color:#035D80 ;height: 80vh; background-image: url(background_home.jpg); background-size: cover; z-index: 500;" id="background_image">
+          <div style="text-align: center; position: relative; top:42.5%">
+            <a class="waves-effect waves-light btn home-button" id="start_button" href="screen2.html">
+              <i class="material-icons left" style="color: black; font-weight: bold">flight_takeoff</i>
+              Let's Get Started
+            </a>
+          </div> 
+      </div>
+      <div style="background-color:#000000;height: 150px; margin: 40px">
+          <h4 style="color: white"> CONTACT US: </h4>
+          <table align="center">
+              <tr>
+                  <td>     
+                      <div class="col s12 m7">
+                          <div class="card horizontal">
+                            <div class="card-image">
+                              <img src="male.jpg">
+                            </div>
+                            <div class="card-stacked">
+                              <div class="card-content">
+                                <p style="font-family: 'Ubuntu', sans-serif; font-size: 20px">Abhijnana Kashyap</p>
+                              </div>
+                              <div class="card-action">
+                                <b>abhijnanakashyap@gmail.com</b>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                  </td>
+                  <td>
+                      <div class="col s12 m7">
+                          <div class="card horizontal">
+                            <div class="card-image">
+                              <img src="male.jpg">
+                            </div>
+                            <div class="card-stacked">
+                              <div class="card-content">
+                                <p style="font-family: 'Ubuntu', sans-serif; font-size: 20px">Aditi HK</p>
+                              </div>
+                              <div class="card-action">
+                                <b>aditihk@gmail.com</b>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </td>
+                  <td>
+                      <div class="col s12 m7">
+                          <div class="card horizontal">
+                            <div class="card-image">
+                              <img src="male.jpg">
+                            </div>
+                            <div class="card-stacked">
+                              <div class="card-content">
+                                <p style="font-family: 'Ubuntu', sans-serif; font-size: 20px">Prajwal </p>
+                              </div>
+                              <div class="card-action">
+                                <b>naikprajwal40@gmail.com</b>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <script>
+          var button=document.getElementById("start_button");
+          button.addEventListener("mouseover", hoveredIn, false);
+          button.addEventListener("mouseout", hoveredOut, false);
+          function hoveredIn()
+          {
+              
+              document.getElementById("start_button").style.opacity="1";
+              document.getElementById("start_button").style.filter="aplha(opacity=100)";
+          }
+          function hoveredOut()
+          {
+              document.getElementById("start_button").style.opacity="0.75";
+              document.getElementById("start_button").style.filter="aplha(opacity=75)";
+          }
+      </script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
